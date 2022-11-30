@@ -1,0 +1,10 @@
+.favorite {
+  width: 50px;
+  position: relative;
+  float: right;
+  margin: 10px;
+}
+
+.Pizzafav {
+  border: 5px solid green;
+}
