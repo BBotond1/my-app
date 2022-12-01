@@ -5,7 +5,7 @@ function Pizza({name, id, ingredients, price, picture}) { /* destructuring objec
   
 const [isFavorite, setIsFavorite] = useState(false)
   return (
-    <div className={'Pizza' + (isFavorite ? 'fav' : '')}>
+    <div className={'Pizza' + (isFavorite ? ' fav' : '')}>
       <img onClick = {() =>
         setIsFavorite(true)
       }src="https://img.icons8.com/fluency/48/000000/star.png" alt="csillag" 
