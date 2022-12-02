@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import './App.css';
+import Cart from './components/Cart';
 import Pizzas from './components/Pizzas';
 // import Beers from "./components/Beers"
 // import Button from './components/Button';
@@ -7,9 +9,13 @@ import Pizzas from './components/Pizzas';
 
 
 function App() {
+
+  const [count, setCount] = useState(0)
+
   return (
     <div className="App">
-      <Pizzas/>
+      <Cart count={count} />
+      <Pizzas setCount={setCount}/>
     </div>
   );
 }
